@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>VIP avatar for Clubhouse</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, 
+  user-scalable=0">
+  <meta name="title" content="VIP avatar for Clubhouse">
+  <meta name="description" content="Generate a unique VIP clubhouse avatar">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VIP avatar for Clubhouse">
+  <meta property="og:title" content="Supert cool VIP avatar for Clubhouse">
+  <link rel="icon" href="/favicon.png">
+  <link rel="stylesheet" href="./style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DH5HP4PS6F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-DH5HP4PS6F');
+  </script>
+</head>
+
+<body>
+  <main class="centerer">
+    <div class="headLabel">
+      VIP avatar for
+      <img id="wave" class="wave" src="wave.png" onclick="loadFrame();" />
+      Clubhouse
+    </div>
+    <input type="file" id="input" />
+    <div class="container">
+      <canvas id="canvas"> </canvas>
+      <img id="result" onclick="document.getElementById('input').click(); return false;" />
+    </div>
+
+    <a class="download" id="download">download</a>
+
+    <div class="coffee" id="coffee">
+      <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+        data-name="bmc-button" data-slug="iamusualguy" data-color="#f1efe5" data-emoji="👋" data-font="Poppins"
+        data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000"
+        data-coffee-color="#FFDD00"></script>
+    </div>
+  </main>
+  <a class="info" href="http://anton-stepanov.ru/" target="_blank"> @iamusualguy</a>
+  <div id="count"> - </div>
+  <!-- partial -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

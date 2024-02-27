@@ -1,0 +1,161 @@
+body {
+  background-color: #f1efe5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+  font-family: "Nunito", sans-serif;
+}
+.centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  width: 90%;
+}
+
+.headLabel {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.wave {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  animation-name: wave-animation;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(-5deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(12deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(12deg);
+  }
+  80% {
+    transform: rotate(-10deg);
+  }
+  90% {
+    transform: rotate(9deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.container {
+  position: relative;
+  margin: 20px auto;
+  border-radius: 42%;
+  width: min(25vh, 25vh);
+  height: min(25vh, 25vh);
+}
+
+#result,
+canvas {
+  position: absolute;
+  border-radius: 42%;
+  width: min(25vh, 25vh);
+  height: min(25vh, 25vh);
+  background-size: contain;
+  cursor: pointer;
+}
+
+canvas {
+  background-image: url("upload.jpg");
+}
+
+#result {
+  opacity: 0;
+  background: white;
+}
+
+input {
+  text-align: center;
+  background-color: #e0e0f0;
+  color: black;
+  box-shadow: 0 0 1px 0 black inset;
+  display: none;
+}
+
+.download {
+  width: 120px;
+  height: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 4rem;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0.2;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.coffee {
+  position: relative;
+  opacity: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0.7);
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.coffee div {
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.info {
+  --text-opacity: 1;
+    color: #2f80ed;
+    color: rgba(47,128,237,var(--text-opacity));
+  position: fixed;
+    bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+  text-decoration: inherit;
+}
+
+#count {
+  top: 0;
+  position: fixed;
+  right: 0;
+  padding: 1em;
+  opacity: 0.5;
+  font-size: 0.75rem;
+}

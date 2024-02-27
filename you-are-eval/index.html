@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>javascript type conversion test</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="test-f.js"></script>
+    <style>
+        body {
+            padding-top: 50px;
+        }
+        
+        .starter-template {
+            padding: 40px 15px;
+            text-align: center;
+            
+            margin: 0 auto;
+        }
+        
+        .col-md-4 {
+            text-align: left;
+        }
+        .label{
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">javascript type conversion test</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="starter-template">
+            <h1>javascript type conversion test</h1>
+            <div class="input-group" style="font-family: monospace;">
+                <span class="input-group-addon" id="question"></span>
+                <input type="text" class="form-control" id="answer">
+                <span class="input-group-btn">
+                     <button class="btn btn-default" type="button" onclick="verifyAnswer(document.getElementById('question').innerText,document.getElementById('answer').value,'answers');setQuestion();">
+                         Go</button>
+                </span>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-xs-6">correct answer
+                    <div id="answers-correct"> </div>
+                </div>
+                <div class="col-xs-6">incorrect answer
+                    <div id="answers-incorrect"> </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function setQuestion(){
+            var q = test();
+            document.getElementById('question').innerText = String(q);
+        }
+        setQuestion();
+    </script>
+</body>
+
+</html>
